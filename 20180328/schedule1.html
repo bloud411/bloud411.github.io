@@ -1,0 +1,37 @@
+<!doctype html>  <!-- schedule1.html -->
+<html lang="ko">
+<head>
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style> table, tr, th, td{
+ border: 1px solid black; border-collapse:collapse;
+}
+ .sub1{background-color:lightgray;}
+ .sub2{background-color:red;}
+ .sub3{background-color:yellow;}
+ .sub4{background-color:green;}
+ .sub5{background-color:blue}
+ .sub6{background-color:purple}
+ .sub7{background-color:lightblue}
+ .sub8{background-color:lightgreen}
+</style> <!-- border-collapse: collapse 단선으로, 반대는 separate -->
+<title>HTML5 테이블 테스트 실습</title>
+</head>
+<body>
+ <table>
+ <tr>
+  <th>시간표</th> <th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+ </tr>
+ <tr><td>9</td> <td rowspan="2" class="sub1">오토마타</td><td> </td><td rowspan="2" class="sub4">자료구조 및 실습</td><td class="sub1">오토마타</td><td> </td></tr>
+ <tr><td>10</td>                             <td> </td><td>                            </td><td> </td></tr>
+ <tr><td>11</td> <td rowspan="2" class="sub2">디지털 논리회로</td><td rowspan="2" class="sub4">자료구조 및 실습</td><td> </td><td rowspan="2" class="sub5">인터넷 프로그래밍</td><td> </td></tr>
+ <tr><td>12</td>                                                                          <td rowspan="2" class="sub5">인터넷 프로그래밍</td><td> </td></tr>
+ <tr><td>1</td> <td> </td><td class="sub2"> 디지털 논리회로</td>                                                                             <td> </td><td> </td></tr>
+ <tr><td>2</td> <td> </td><td> </td><td rowspan="4" class="sub7">C++프로그래밍</td><td> </td><td> </td></tr>
+ <tr><td>3</td><td rowspan="2" class="sub3">독서 세미나</td><td rowspan="3" class="sub8">세포의 세계</td><td rowspan="2" class="sub6">캠퍼스 멘토링</td><td> </td></tr>
+ <tr><td>4</td>                                <td> </td></tr>
+ <tr><td>5</td> <td> </td><td> </td><td> </td></tr>
+ <tr><td>6</td> <td> </td><td> </td><td> </td><td> </td><td> </td></tr>
+ </table>
+</body>
+</html>
